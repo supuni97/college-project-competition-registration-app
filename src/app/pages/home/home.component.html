@@ -1,1 +1,244 @@
-<p>home works!</p>
+<section class="hero-section position-relative text-white d-flex align-items-center">
+  <div class="overlay"></div>
+
+  <div class="container py-5 z-1">
+    <div class="row">
+      <div class="col-md-8">
+        <h1 class="display-4 fw-bold">Showcase Your Innovation</h1>
+        <p class="lead mb-4">
+          Join the most prestigious inter-college project competition and demonstrate your
+          creative solutions to real-world problems.
+        </p>
+
+        <div class="d-flex gap-3">
+          <a routerLink="/competitions" class="btn btn-primary btn-lg">
+            Browse Competitions
+          </a>
+          <a routerLink="/register" class="btn btn-outline-light btn-lg">
+            Join Now
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Featured Competitions Section -->
+<section class="py-5 bg-white">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">Featured Competitions</h2>
+      <p class="text-muted">Participate in our ongoing competitions and showcase your talent</p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Card 1 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm position-relative">
+          <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg" class="card-img-top"
+            alt="AI Challenge">
+          <span class="badge bg-danger position-absolute top-0 end-0 m-2">Deadline Soon</span>
+          <div class="card-body">
+            <h5 class="card-title">AI Innovation Challenge</h5>
+            <p class="card-text">Develop AI solutions that address real-world problems in healthcare, education, or
+              sustainability.</p>
+            <a routerLink="/competitions/ai-innovation" class="btn btn-outline-primary btn-sm mt-2">View Details</a>
+          </div>
+          <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center">
+            <span class="badge bg-primary">📅 Ends: July 15, 2025</span>
+            <span class="badge bg-success">👥 45 Teams</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="https://images.pexels.com/photos/7988079/pexels-photo-7988079.jpeg" class="card-img-top"
+            alt="Web Hackathon">
+          <div class="card-body">
+            <h5 class="card-title">Web Development Hackathon</h5>
+            <p class="card-text">Create innovative web applications that solve problems for local businesses or
+              communities.</p>
+            <a routerLink="/competitions/web-hackathon" class="btn btn-outline-primary btn-sm mt-2">View Details</a>
+          </div>
+          <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center">
+            <span class="badge bg-primary">📅 Ends: July 18, 2025</span>
+            <span class="badge bg-success">👥 38 Teams</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="https://images.pexels.com/photos/27523128/pexels-photo-27523128.jpeg" class="card-img-top"
+            alt="IoT Competition">
+          <div class="card-body">
+            <h5 class="card-title">IoT Solutions Competition</h5>
+            <p class="card-text">Build Internet of Things solutions that improve efficiency, safety, or quality of life.
+            </p>
+            <a routerLink="/competitions/iot-competition" class="btn btn-outline-primary btn-sm mt-2">View Details</a>
+          </div>
+          <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center">
+            <span class="badge bg-primary">📅 Ends: July 20, 2025</span>
+            <span class="badge bg-success">👥 32 Teams</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- View All Competitions Button -->
+    <div class="text-center mt-5">
+      <a routerLink="/competitions" class="btn btn-primary btn-lg">
+        View All Competitions
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="how-it-works" class="py-5 bg-light text-center">
+  <div class="container">
+    <h2 class="mb-4 fw-bold">How It Works</h2>
+    <div class="row g-4">
+      <div class="col-md-3">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <i class="bi bi-person-plus display-4 text-primary mb-3"></i>
+            <h5 class="card-title">Register</h5>
+            <p class="card-text">Sign up to participate in the competition easily with your details.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <i class="bi bi-lightbulb display-4 text-success mb-3"></i>
+            <h5 class="card-title">Compete</h5>
+            <p class="card-text">Show your skills in various challenges and tasks.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <i class="bi bi-bar-chart-line display-4 text-warning mb-3"></i>
+            <h5 class="card-title">Score</h5>
+            <p class="card-text">Earn points based on your performance and creativity.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <i class="bi bi-trophy display-4 text-danger mb-3"></i>
+            <h5 class="card-title">Win</h5>
+            <p class="card-text">Top scorers receive exciting prizes and recognition.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="winners-info" class="py-5 bg-white text-center">
+  <div class="container">
+    <h2 class="mb-4 fw-bold">Past Winners</h2>
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <img src="https://images.pexels.com/photos/4429500/pexels-photo-4429500.jpeg"
+            class="card-img-top rounded-circle mx-auto mt-4" alt="System 1"
+            style="width: 100px; height: 100px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Motion Master 2023</h5>
+            <p class="card-text">An interactive physics simulation system that visualizes motion laws and lets users
+              adjust variables in real time.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <img src="https://images.pexels.com/photos/4522999/pexels-photo-4522999.jpeg"
+            class="card-img-top rounded-circle mx-auto mt-4" alt="System 2"
+            style="width: 100px; height: 100px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Gravity Quest</h5>
+            <p class="card-text">A gamified learning platform that helps students understand gravitational concepts
+              through missions and challenges.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <img src="https://images.pexels.com/photos/5428830/pexels-photo-5428830.jpeg"
+            class="card-img-top rounded-circle mx-auto mt-4" alt="System 3"
+            style="width: 100px; height: 100px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Force Explorer</h5>
+            <p class="card-text">A visual learning app that demonstrates different forces acting on objects with
+              real-time feedback and quizzes.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<section id="call-to-action" class="py-5 bg-primary text-white text-center">
+  <div class="container">
+    <h2 class="fw-bold mb-3">Ready to Showcase Your Talent?</h2>
+    <p class="mb-4">Join now and be part of the most exciting competition experience!</p>
+    <a href="#register" class="btn btn-light btn-lg px-4">Register Now</a>
+  </div>
+</section>
+
+<section id="testimonials" class="py-5 bg-light text-center">
+  <div class="container">
+    <h2 class="mb-4 fw-bold">What Winners Say</h2>
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm p-4">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGNMbS9FpVKBS-N-Ws9jjcHe490w9yHTmaiw&s"
+            class="rounded-circle mx-auto mb-3" alt="User 1">
+          <p class="fst-italic">“FunPhysics made learning motion fun and interactive. My students are more excited about
+            physics than ever!”</p>
+          <h6 class="fw-bold mb-0">Ms. Nisansala</h6>
+          <small class="text-muted">Physics Teacher</small>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm p-4">
+          <img
+            src="data:image/jpeg;base64,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"
+            class="rounded-circle mx-auto mb-3" alt="User 2">
+          <p class="fst-italic">“The competitive features really motivated me to study harder. Solving questions felt
+            like a game!”</p>
+          <h6 class="fw-bold mb-0">Kavindu R.</h6>
+          <small class="text-muted">Grade 11 Student</small>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm p-4">
+          <img
+            src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxASERUSEhIVFRUVFRgWFRcVFxUVFRYVFRUWFxUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGxAQGy8mICYtLS8vKy0tLS0tLS0vLS0tLS0tLS0tLS0tLS0tLS0vLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAQMAwgMBIgACEQEDEQH/xAAcAAABBAMBAAAAAAAAAAAAAAAAAwQFBgECBwj/xAA9EAABAwIEAwUFBgYCAgMAAAABAAIDBBEFITFBBhJRByJhcYETMpGhsSNCUsHR8BUzYnLh8RSCkqJDU7L/xAAaAQABBQEAAAAAAAAAAAAAAAAAAQIDBAUG/8QALREAAgIBAwIFBAICAwAAAAAAAAECAxEEITESQQUTMlFhInGBkdHwseEUM0L/2gAMAwEAAhEDEQA/AOzoQhOAEIQgAQhCABCTqJ2RtLnuDWjUuNgmIxynPuyNdYcxsRk3qR0SgSSTmna33iBkTmdhqVS8V42ayoMZu2MxnlNhcvFiTnoLXC5jxJxs+ocS64szkjAO1zzOd5j6IA73PiUDGCR0rGsI5g5zgG8vW5yAVNxDtYw2MkMMstt2M5Wk/wBJda/nZcQxDF5pwxkjyWRtDWt+6Gtz03zUXVTG1+uQ8kgHX6rtqJJEVILDeR5+jRqm0HbHV5l1LERt3nN/2uXRtAsDoP8AZPwWglLzzG9r2YPDS/mgDr2E9srzLapp2iK9vsiXPb0OeTl0nh/iajrQf+PKHOABcwgtkaDu5hzt46LysyYhxzsGnO2uR2+CmoMelfZ4klD4xaORpDS0bgu1cMtEoHqZZXEME7Sa8ubGDGGOAs6fmkIt72YFyDt9VduHOPWTTugldFYRtc2RpLbuJIMbmEmxFuqALyhaxvBFwbhbJABCEIAEIQgAQhCAMIQhAAhZQgDCiuI8cjo4faPzc5wZG38bzoMttyeillyftWxRwqwxpv7Glc5rLEn2szwA4W0IA16XQBE8RY5M95fLO9zm5say7WBwNi8MA7rdWi5v3bnVVTE+Kql7LGUuF8ycz6HUdFHzVvdb3u9a5sDe5zIudT9VEOeb63adfDohsEiQqcckka1jjfkJcDv3tRfomRku7y/S6S9kQ7Lol2R56bC6Zkd0sbucfZuN8y63zWsrTzsCWdFZhH9QKzLF3gTfI/JHUHSxSSMhjuvKB/5PsfkFuxgD2jYN5vPoto2mzh1HyvdKvjuARqAR6FHUO6CGFO4m2gvcn6/mnbJx0tHHo3d7hndycugJafE/JIzUZOVskisB1sbU80kshO5+AH5BP6aflILDcg66XPUJgGmMEWt+9UpGbEHpYfAXJ+aepDMYO28B9ocYjZTzxvHKA1sjbvudy8k3GfgunwTNe0PabtIuCNwvOvCVAZ5W2D+TLmLb89jqA37x+i9DYe1rY2taLBoDQDkcsk4QcIWUJABCEIAEIWUAaLKwsoAEIQgDBXFe2eUR1jDyh5extm305dXOAzOotfLVdqXDu26tDqyNjR/LYWuOWps6w8hr5hAHOKx4cbcjR/bdtkmGdPnus8l8909oos2g5j6KOTwskkI5eBWhw9ziMtPgp7+CiwIGZ+u35qSw6iDW5KWp4clnTubexqQoiluVWHh656XT+PhptzcKxCP/AEnMUJUcpz9yaNcF2KweG2jQapnNgBA7tz4bq9tiuthSC97IjZMJVwfYqGF8PB3vD9+akZuH4gPdVnZTjosy0+SVuT3GpRRQMR4bYQSBmqjiuCPhcHEXYTr08F16WnsmuIYayWMtIvcKemySZDfVGSyRPAnF1PEOV0T4m2sXRtD3W6k+Pguq4JjdLPb2D3O/uDgQPEOzC8/YM99FWcjgDY5XGR/Cu98M1kNRCxzWAEGx0NnAZjLQrRi8rJlSWHgsKEBCBAQsoQBhZQhAGiyhCABCEIAFwLtlcRXFtwBYPttzOAFz1Nmj5Lvi899rtziDySc9j90d0X9bf+qGBSYpCTl8Tr6dAn9Bk4X6phG2xNvIJ5St7371UMt0TV7Mv2FyAtspVndOen0VdwKUZA6qf5r3usyezwa8HlC8Y73n808yyFvgmtOMwPDPyTg38kjewqW4vABdPCmEQ8U4j03SweAkh20iyzcev1SLALIa9oOilyR4EavMe6mdO7M38k+fOdgmTWknvan6pFLEsitfTgovHNLyyxyeNirj2b1r2vHLdzHZEDWzbd8X9618xqPJRHG9PzQg7g/sJbs5icTZuQ5m87Dnyn7rwRm0nMXGWy0KH9JmahfUdnBWVhoyWVKVzKEIQAIWFlAGqEIQAIQsIACvPXaqCa+XUjLyyaMgvQy8/dpdKGVTncwIkfI7W+4AHgf0CRipFHa2+6eQm35JCEndptfXZTOEUIkkCgnLpWWWK49TwiZ4epyczopsS2NltDEGtsOiRkcWgu32BWY31PJrRj0rBJwVETBd5t6J/TVkL/ckBVDnpJJTzyvy2GgHwUfJU+ydeOUC2wJt8yVOqotc7kErJJ8bHVmxBOBTLm+GcUyA2c4EK00eO8wGfzUbh08kqk5LYnzTkLaOFMo8Svazk2xDFgzUpW49gWe5L/8AHaM7jxUBiuO00R5S6/lnZVrFOJZSSyP9VD08URd9q93MdiOXP11U8a44yyCU5Zwi28QPZNRPkY7mDRzAjoCpTsipXOvKcg1vKNuYOzF+trEXUBhVJyxSxA3a5jreXKV0rs9wx1PRRtcO8bn0JuPlZW6eNijqM53LKhCFKVwQhCABCEIAwhCEACwsoQBXePK90NIeR3K+RzWAjYE975LnlXRxPjDZhzk5XOt+t1eu0anLqZrh9yQE+R/0qq50bbGQZarM1Un5v6NjRxj5GfllFxjCmwsLmC1vpsfNLcLxF5Lr2I3sL+N+qm2mOp9o0A8hJAuLfD4pHAcOdCXh2mxGhQrG62u4jqStTHkkj2jQO+SjH4gwn7QOba+Vunkp0svkkpqJh2+fgootd0TSi+zKzU1jZXNZGGOBNs+a3rc7eCg62sMc/sy8BofykNjaBy/ita5v5q6uow61o720t0Sc0bnuuYDcaGzTbyJVmFqi+CCdLmuRvj2CGKGKaNtg9ocW8rA9twD3rDvN8bX803oonsLXPDRG4X5iMtL/AHc1Mz00jwAWAEZgnvOJR/C5XBvK5rSCCb5ggHMeHVFk4thCEoRHtO8WPKHWtq4BoHxN/koPHJXBriG5h2bnDmAFhblF/HorZTEODm2Glj6i3+VFPw50hdzOGQAsBsLgO+iircFIksU2igc1V7UWErwScowGg5d0iw+N1dMWpg6KIx5S8g9q1vuXsLkA+64G+i2g4fla7J4P91x8LFPP4dK0G/L/ANdVadjawV40RTzk0wWUZNObtNLaq/4LWENibBDKWE8sjXMcxrMv5kZd924zaMs8lR8PtzAkZ3XWadtmtHRo+idQ9mQapboUQhCsFQEIQgAQhCAMIQhAAhCEAIV1K2WN0btHC36Fclx2EsaAfulzHf8AUrsK5/xph/LMbj7OXPLZwyd+XxVPWV5j1F/QWYl0shaGibHEy24Jv/cVvK3LJIWkidy5GMZC57wTqQ/RUo9y7PnI0aC2yfUrLhMXOS9LLynIJmcEmMj0UwbmFq2I/wCk9ppWu2805IAGSeIvki2wgAk3A6lMHTOd3YxYZ3cdfQJHiKukJDWe6NfFFLjVNHH9qbetj8EYH8LJLUMQDQFvPTltyLX8dCOhURS8TQyZRkADrkfW6dV/E8LWAyOAA7txck38k6MdxkpbZHUVRzd10ZafA5HySxjvsfiFF4nUiSNskJuQCfMZf5T/AAbEvaRi4z6qRPA1x2ybNpRe9l0aMZDyH0VLoY+Z7W9XD6q7q3p+Mmbq/UkYQhCsFQEIQgAQhCAMIQhAAhCEACZ4th7Z4+R2urT0cniEjSawxU2nlHMcRh9m4tkHK4dd/EdQmTnggEaLp2NQB8D2+GX+FyqB/dI6G/5FZ9mnVe6ZpV6jzFhrgy45pWMWSKcBVJItxlsOaWWx1Tyaos1RTG9Fs95LPVEOcD5cZFLjdNZqZrtWg+gULX48I3hhY4nazTY+uiyzHpne7GRb+nP4lWlF+xWWZExT4NC4kujaSNDax/ynYomWFmjI55ZZ7qGbilTa4D/G7ckq6tqHW7pHkA381JFMJVMmZS0DuiyY0BDHvaNDmPXX5qPNfOHBpY53MCb5d23U3T2hHMST0z80yyOEJBtSLdw468sf935FXRUzhpt5mep/9SrkrWn9BQ1T+sELKwpyuCEIQAIQhAGqFlCABCEIAELCygDWQXGS5LidK6Cokjdpc8v9pzC6VjGOwUxjbI7vyuDI2Nze8k2yHTxUbxPgoqGczf5jc2+P9JUN8HKOxPp5qMt+Gc9580qJkyrA5pta2diDseiQZVbFZso9zUi+xNQvB3WsbveaVGw1ZB1Tl2Z5rqNbMkzsLSUbXCx/0mRpxH+L0UtBY7/qnHsMs1KptMZ9iBFYBs4+QSzcRB7tnN8wL2OWyl/+IDosCia3r8lMpvAxyeeRtSQt138dVlosctzmliwahKMpS97WMF3HTx/wkw5DXJRLVwlB3i/YNsPM/wCFZk1wyiEMYZqdXHqU6WhCPTHBl2S6pZMrCEJwwEIQgAQhCAMIQhAAsLKEAYWssrWtLnGzWgkk6ADMlbLlfa9xfyg0MJzP89w2G0Y+p+CAKVjPFplxVtY4kxxyt5B+GJpsLel3eZXfKeVr2hzTdrgCD1BzBXlWTNdZ7IOLQWihmd3h/JJ3G7PMbIBF14l4bbUAvZYSWz6O8/HxXLMQp3wuLXg5G2eoPQrud1CcR8PRVTc+6+1g4D5OG4VeynO6LVV+Pplwce59wUtHUPtqksbw2ekl9nK21/dd91w8Cmzaq2osVW6IvlFzqfZk7T4nbVPmYw3S97qvx1LTqtZgDoQlVC7MY7H7Flbi4G6DjLTcAi6qJY47qX4e4ffPK1l7BxzJ2G5Uir+Rrn8FiwhklQ/2cQudzs0dSdguh4PgzIBf3nnV35N6BLYPhcVNEIom2A1O7j1cd09VmFaiU7LXIEIQnkQIQhAAhCEACysIQBqsrCEAZQoPiLiqlospXXeRcMbm62xPQLm+JdqFWXExPjY3ZvIHWHi45k/BSxpm1kY7I5wdD4y4qgoIS55vK4ERMHvF1siejR1XnGtqXyPc95u5xLnE7k5lKYziD55HSSSOe92rnZn/AAPAJgyS/wCaSUHHkVPJslKeZzHtewlrmkOaRqCNCk1kJop6M4E4jbX0wfkJGd2VvR3XyKsfs15x4J4ifQ1TZQe47uyt2LCdfMa/Fej6KoZKxr2EFrhcEdChoExjiuDQ1MZimYHNPxHiDsVzHiPgSWl7zS6aD8QH2kf9wHvN8QuxFiy0bFRTrjLklrtlB7HBG4U21wbg7hKx4ODuV1XGuD4Zbvi+yfqbe44/1N2PiFRa+ilp3lkrS07HZw6g7qnZCUDRqshZ9yHZglswfJT+GyeydABq6T5AZpKI82iToX+0xGOMaRR3Pm4/4RU23uFqSWx11pWVzrjrj2pw6qbEyGOaP2THuBLmyAkuBs4ZEd3Syl+Eu0SgrwGtf7KU6xSEB1/6To5aGDKLchCEgAhCEACELKAMLKEIATUHxPxLFSNtcOlI7ren9T+g+qa8U8Vx0wLGHml8NG+fiuRY1ihe9znXJcbk3uVaqpXqn+v5IZWN7R/f8DbGsRMjnPc7mc4kknUnzKrtRJfNOKqa5/YUdUPVpyb3ZGkksITc5ajJalZa6+RyTGlLZjs4F2OWwSPKR+8ko0qrZW4sljLJvddW7IOKS29HI69ruiv0+8z01HguUJeiqnxSNkjPK5hBaehCYKesIngpSyrPBePMrKZkzcjpI38Eg94eR1HgVZGuTGsCo3CaYph0VRGY5G3B0O7T1adinYWbJr3HJ4eUcrxrC5KPm5wSwZtk+7bxOxWezDCJJZZayRpaxzrRXFi9rRbmz+7r8VfOIMXpIGhtRIxvPoHC97a5WKSwHH6SoHJC6xGjHNLHWH4QdR5KKNKi8lmd05Q3X5ON9rdZzYs9uzIo2eti4/8A6VAxCnsedmR1y+o8Vb+1wcuLzeLY3fFn+FWnm4VkpnSuy7tKcS2mrH8zTZrJXHNp2DydW7XXZl46bJyS22K7T2d9ovK1tPVm7RZrZd2jYP6jxUvluyPVHnuM6lB4fB1xC1jeHAOBBBzBGYI8Fsq5KZQsIQBlCwhAHnKsxC9zz8xOZJKhpqoHZDqFh3KRloBb3reauLUVlqXhGpiuE/sxtPKmj3XT2Shda4IPkmRaVKpKXBRtpsqeJrABqw8XWwcQt2g7AfC/1UiWUQPYSjkI2uOh/JKtabX2+iwR1CUYHsFxe1sx4JfLysPgTqw8o0c6yyHLUxkgOGyCqFkHB4ZYjLKLd2f8WPoJ7nvRSWEjb28njxC9E0NUyVgcw3B+PkQvJLXLsHZpxLJJCY2HmqKdt+Qm3/IpxlYH/wCxmx3yB8I3uOOwAKPx7GoaSEyynTJrR7z3bNamVZxZSxUxqZH2Ay5f/k5/wcuvMuK41xDPXz+1kPKDcRM+7GzYeLjqT18Ao3sW9Lp/NlvwuTGPYtNVzOnlOZyDR7rG7Nb+u6KXEZGWLTYtIII1u03BusCkaWFwdewN+lxt+SatCU6CEK5rpxshz2wDnqoaoaTU0bj5tLmlU+F12q+cS0/tsPpH/gZJEf7mPP5ELnlK6xIKejl7YdE3H2Y1xGH741CksKqMgfRN6tmR8k3waTUdM1Y0sumzHuV7Y5gdT4K47konCKW76c7aujPVnh4Ls+GYjDURiSF4e07j6EbFeYps/UX9VMcJ8T1FFMHxuu12T43e679D4q1qNMpbx5IabXHZ8HpBCrvDfGVJWWa13JIdY3ZG41sd1YlltY2Lzi1yCEISCHl1zytQ9YCxI3cKI7N5NKeTldy7HNvgdwtqmmDuia11wA9uxv8AqE9ZJcAjQgFPhNweUVp1QuTrmv78EcYAMnLegDblp22T97AUwrGcrgR8Vq6fUxnzyczrvDZ0fUt4/wCPv/JKxU7Xi/KCfPK6bvDmZFgt5bprBVOZ326H3h+asALJGg5EHQhaEWpGQ1grUsQHhfVIujyVmkpWuba2e3go5tBso7KFPZjo2OO5DKQwPFZKaeOeM2fG7mHiNHNPgQSPVJ1tC5mdjZM1kW1Srlhl2M1JZR6Mbh9DiUTKvka5skfK7LvDqD0IK5bj+AS0VRyWLoz3o3dRf69Qn3Y5xP7Cc0kjvs5jdl9Gy/o4fMBdY4iwNlTHy7jNh6H9FFJZLNF0q5ZRwWSZ1+8Sfp8NkpDKNFpxSHQVBitnbMeIJCTwiRpIJFzffTysoeGdFRcrEnEteEkTUFVFzAuje2ZoBuQCAx+XTJp9SuZVg5ZT4rpGE4kyKawaQya8cl7WIdk3LwdmqLxVSGOVw6OKkyYuurkrW2udxrJmFEwnll9fqpON12qOqcpWnyT08STM98NFgpYHva633Re2/otquPlHibG4WaP2jzYZmx0W9dOOTlay17cxPUdFu4XSZ2/UbYbUnUOIcDcEZEHqCu39nPFpq2GGY/bMGR/G3r5jdcGohZw8VO4ViMlNMyaM95pv59QfAhYupj02fc6jRw/5Ok6XzHZHpJCr1LxlRPY15lA5mh1jqLgGxQoTP8qfszz41bJC5CWY5QnYJmpjuCOqa0Bs0sOrCR6bfJPLpnJ3ZQdni3qNPzQRT2kpfj9/7HbHLWqj5m+S0ulWPSxk08oWyEbIuMu5GQOsbHRPMMqvZuLSe6dEhURWcbea1kacidvot3T29cVJHD6vTuixwZYpZrNB1REQcxl80wp5O7Y55ZeKXoHOF7iwOn72V3OSlgeus5tvRV7EsPLDcZgqXqnPaeZuY3CVLw5liNcj4JttUbVhiwm4PKKrFIWkEEgg3BGoI0IXo/s74kFfRtc7+azuSj+oaOHg4WPxXn3FKEs7wzH71U52ccSmiq2lxtFJZkvQAnuv9D8iViW1OuXSy/Caksoku1elP8QlNtmu8wRr9VVaOchdi7UcHa90NVsR7N2wN82XPxXKcQog1wcxvK05aWzBO3iqkl3Oh0s04R6fbcfMk9ow9fz2TfitvtWNl3e0c3g8CzvmL+qcUjbNSNYMnM2PeHnulRY8Qpc6uruiqUb9k0xAWcCnAHK8jxSeKNyB8U/sc13J7Coy57Q0gG2Vzb5p1PDM7nZymwz0DL211SeAAGRgcMiLH4KVxKls/m5yW36i3LvqfyXRVxzEypvDK9BqPAqSvdvkozmAdYaXt1+akIzn5rJ10OH+DpPArfXB/DDnQsFqFnHQCbHBzQQtGlNsPfYlu2o/NOnjNMHQn1RTN3HdIzt5mkbjMeY0SrCkHPIz6FKLPHDNmm4BQx6UpwMx6jyP7Kb1ItmkY17LItPmAeizAOccu/1C1gdzBJsJB8Qrekv8uW/D5MzxLSK+HUue38DuN3L3DspCnfcWyuoyveCA4eqUopL5j1FtvNb6e+DkGsEsRsbfvyWvsQclvE7LIfFbSA8uufknjRjLHqDmOir9XT8jrbHTy6K0Fl0xrKZrrtOX4b9VBqaPNj8j6rOh/B03gXE/4lhUtG5328LOVhOvdF4X+haBfwXNZuY+9e+99iNik+DMdfh9bHNnyg8so/FE4gO9RqPEK1cf4WIatzmWMc4E0ZGhD/et65+qwbE09zp/CbVl1vvuiApn2Cd4zRcjGv5rncfomMafuqOaPlLeY2tcnbZM7G1apNLpKRizOWQHYpGrF4ypLGYCY77sz9N1GA3YfJLF7HL6qry7GuxYsDaeaO3JoPe00Upi5b94tDrZgsBP/kMiPFReFMb3L8nu/evbRTFRk2wLWja4Mrf+rrXHkV0sPSYUvUVwNvJfM+JTrmv09E2qWHXN1j0IalYHbZaZWVLVx6qn+zT8Kt8vUx+dv7+R4JAhN7oWLk7LJFQHvt81JvQhRoi03pZhiRqxn/1QhL2Jp+kKI5DyPyISlUMihCOw2PpG1AUrPqsoREZ/4QnPoUtQ6j97LCFv6b0R+xxmtSV08e7JqE6JwfdBQhXUURV+nooPETmhCJCkZUG7bnM5Z/JX+ulc/BcPe83c2eWIE6iMB1m+XdHwQhYmt9ZseGf9sfuV+yXYsoVM7JkXUjMhVdmjh5oQkic94nyvyWvB4mksuAe6PopbGI2xR88Y5HWGY/TRCF1EfQcpLkrU1VJJk9xIS8TrAAWtfoPrqhCrS3g/sWadrYY91/kFlCFzx3h//9k="
+            class="rounded-circle mx-auto mb-3" alt="User 3">
+          <p class="fst-italic">“An excellent platform that blends fun and learning. Ideal for schools looking to
+            enhance science education.”</p>
+          <h6 class="fw-bold mb-0">Dr. Liyanage</h6>
+          <small class="text-muted">Educational Consultant</small>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
