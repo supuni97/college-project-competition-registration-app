@@ -22,16 +22,96 @@
       </ul>
 
       <!-- Right buttons -->
-      <div class="d-flex">
-        <button class="btn btn-outline-light me-2" routerLink="/login">
-          <i class="bi bi-box-arrow-in-right me-1"></i> Login
-        </button>
-        <button class="btn btn-light fw-bold" routerLink="/register">
-          <i class="bi bi-person-plus-fill me-1"></i> Register
-        </button>
+      <div class="d-flex flex-column align-items-end">
+        <div>
+          <button class="btn btn-outline-light me-2" routerLink="/login">
+            <i class="bi bi-box-arrow-in-right me-1"></i> Login
+          </button>
+          <button class="btn btn-light fw-bold" routerLink="/register">
+            <i class="bi bi-person-plus-fill me-1"></i> Register
+          </button>
+        </div>
+        <hr class="text-white border-2 opacity-100 w-100 mt-2">
       </div>
     </div>
   </div>
 </nav>
 
 <router-outlet></router-outlet>
+
+<footer class="bg-dark text-white pt-1 pb-3 mt-5">
+  <!-- Call to Action Section -->
+  <section id="call-to-action" class="py-5 text-white text-center mb-4"
+    style="background: #1a1a1a; border-top: 3px solid #fff;">
+    <div class="container">
+      <h2 class="fw-bold mb-3" style="
+        font-size: 2rem;
+        background: linear-gradient(90deg, #1d6cff, rgba(138, 43, 226, 0.7));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      ">
+        Ready to Showcase Your Talent?
+      </h2>
+      <p class="mb-4" style="
+        font-size: 1.1rem;
+        background: linear-gradient(90deg,  #1d6cff, rgba(138, 43, 226, 0.7));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      ">
+        Join now and be part of the most exciting competition experience!
+      </p>
+      <a href="#register" class="btn btn-lg px-4 fw-bold" style="
+          background: linear-gradient(90deg, #1d6cff, rgba(138, 43, 226, 0.7));
+          color: white;
+          border: none;
+          box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+          transition: transform 0.2s ease-in-out;
+        " onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        Register Now
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer Info -->
+  <div class="container">
+    <div class="row">
+      <!-- About -->
+      <div class="col-md-4 mb-3">
+        <h5 class="fw-bold" style="color: #1d6cff;">
+          TechNova</h5>
+        <p style="font-size: 0.95rem;">Igniting innovation and creativity through nationwide tech competitions.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-4 mb-3">
+        <h5 class="fw-bold" style="color: #1d6cff;">
+          Quick Links</h5>
+        <ul class="list-unstyled" style="line-height: 1.8;">
+          <li><a routerLink="/home" class="text-white text-decoration-none">Home</a></li>
+          <li><a routerLink="/competitions" class="text-white text-decoration-none">Competitions</a></li>
+          <li><a routerLink="/winners" class="text-white text-decoration-none">Past Winners</a></li>
+          <li><a routerLink="/about" class="text-white text-decoration-none">About</a></li>
+        </ul>
+      </div>
+
+      <!-- Social -->
+      <div class="col-md-4 mb-3">
+        <h5 class="fw-bold" style="color: #1d6cff;">
+          Follow Us</h5>
+        <div style="font-size: 1.4rem;">
+          <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-white me-3"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <hr class="border-light">
+
+    <div class="text-center small" style="opacity: 0.8;">
+      &copy; 2025 <span style="color: #1d6cff;">TechNova</span>.
+      All rights reserved.
+    </div>
+  </div>
+</footer>

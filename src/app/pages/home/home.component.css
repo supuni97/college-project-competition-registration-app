@@ -27,3 +27,9 @@
   height: 200px;
   object-fit: cover;
 }
+
+.testimonial-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
