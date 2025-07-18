@@ -3,6 +3,7 @@
     <div class="col-lg-8">
       <div class="card shadow border-0">
         <div class="card-body p-4 text-center">
+
           <!-- User Plus Icon -->
           <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor"
             class="bi bi-person-plus-fill mb-3 text-primary" viewBox="0 0 16 16">
@@ -14,72 +15,52 @@
           <h2 class="fw-bold mb-2">Create Your Account</h2>
           <p class="mb-4 text-muted">Showcase your skills and compete with the best minds in tech!</p>
 
-          <form>
-            <!-- form fields unchanged -->
-            <div class="row mb-3">
-              <div class="col-md-6">
-                <label for="firstName" class="form-label">First Name</label>
-                <input type="text" class="form-control" id="firstName" placeholder="Enter first name">
-              </div>
-              <div class="col-md-6">
-                <label for="lastName" class="form-label">Last Name</label>
-                <input type="text" class="form-control" id="lastName" placeholder="Enter last name">
-              </div>
+          <form id="registerForm">
+            <!-- Full Name -->
+            <div class="mb-3 input-group">
+              <span class="input-group-text"><i class="bi bi-person-fill"></i></span>
+              <input type="text" name="fullName" class="form-control" id="fullName" placeholder="Full name" required
+                [(ngModel)]="registerObj.fullName">
             </div>
 
-            <div class="mb-3">
-              <label for="email" class="form-label">Email Address</label>
-              <input type="email" class="form-control" id="email" placeholder="Enter email">
+            <!-- Email -->
+            <div class="mb-3 input-group">
+              <span class="input-group-text"><i class="bi bi-envelope-fill"></i></span>
+              <input type="email" name="email" class="form-control" id="email" placeholder="Email address" required
+                [(ngModel)]="registerObj.email">
             </div>
 
-            <div class="mb-3">
-              <label for="college" class="form-label">College</label>
-              <input type="text" class="form-control" id="college" placeholder="Enter your college">
+            <!-- College Name -->
+            <div class="mb-3 input-group">
+              <span class="input-group-text"><i class="bi bi-building"></i></span>
+              <input type="text" name="collegeName" class="form-control" id="collegeName" placeholder="College name"
+                required [(ngModel)]="registerObj.collegeName">
             </div>
 
-            <div class="row mb-3">
-              <div class="col-md-6">
-                <label for="department" class="form-label">Department</label>
-                <input type="text" class="form-control" id="department" placeholder="Enter department">
-              </div>
-              <div class="col-md-6">
-                <label for="year" class="form-label">Year of Study</label>
-                <select class="form-select" id="year">
-                  <option selected disabled>Select year</option>
-                  <option>1st Year</option>
-                  <option>2nd Year</option>
-                  <option>3rd Year</option>
-                  <option>4th Year</option>
-                  <option>Other</option>
-                </select>
-              </div>
+            <!-- Password with Angular toggle -->
+            <div class="mb-3 input-group">
+              <span class="input-group-text">
+                <i class="bi bi-lock-fill"></i>
+              </span>
+              <input [type]="showPassword ? 'text' : 'password'" class="form-control" [(ngModel)]="registerObj.password"
+                id="password" name="password" placeholder="Password" required>
+              <span class="input-group-text" (click)="togglePasswordVisibility()" style="cursor: pointer;">
+                <i [ngClass]="showPassword ? 'bi-eye' : 'bi-eye-slash'"></i>
+              </span>
             </div>
 
-            <div class="mb-3">
-              <label for="phone" class="form-label">Phone Number</label>
-              <input type="tel" class="form-control" id="phone" placeholder="Enter phone number">
-            </div>
 
-            <div class="row mb-3">
-              <div class="col-md-6">
-                <label for="password" class="form-label">Password</label>
-                <input type="password" class="form-control" id="password" placeholder="Enter password">
-              </div>
-              <div class="col-md-6">
-                <label for="confirmPassword" class="form-label">Confirm Password</label>
-                <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm password">
-              </div>
-            </div>
-
-            <div class="form-check mb-4">
-              <input class="form-check-input" type="checkbox" id="agree">
+            <!-- Terms -->
+            <div class="form-check mb-4 text-start">
+              <input class="form-check-input" type="checkbox" id="agree" required>
               <label class="form-check-label" for="agree">
                 I agree to the <a href="#" class="text-decoration-none">terms and conditions</a>.
               </label>
             </div>
 
+            <!-- Buttons -->
             <div class="d-grid gap-2">
-              <button type="submit" class="btn btn-primary fw-bold">Register</button>
+              <button type="button" class="btn btn-primary fw-bold" (click)="onRegister()">Register</button>
               <button type="button" class="btn btn-outline-secondary">Already have an account? Login</button>
             </div>
           </form>
@@ -89,3 +70,16 @@
     </div>
   </div>
 </section>
+
+<script>
+  // Show/hide password toggle
+  const toggle = document.getElementById("togglePassword");
+  const password = document.getElementById("password");
+
+  toggle.addEventListener("click", function () {
+    const type = password.getAttribute("type") === "password" ? "text" : "password";
+    password.setAttribute("type", type);
+    this.classList.toggle("bi-eye");
+    this.classList.toggle("bi-eye-slash");
+  });
+</script>
