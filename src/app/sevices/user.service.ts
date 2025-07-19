@@ -5,7 +5,14 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class UserService {
-  constructor(private http: HttpClient) {}
+  loggedUserId: string = '';
+
+  constructor(private http: HttpClient) {
+    const loggedData = localStorage.getItem('studentId');
+    if (loggedData != null) {
+      this.loggedUserId = loggedData;
+    }
+  }
 
   onUserLogin(obj: any) {
     console.log('Sending login request to server with:', obj); // ✅

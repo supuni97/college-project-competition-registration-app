@@ -21,9 +21,8 @@
         <li class="nav-item"><a class="nav-link text-white" routerLink="/about">About</a></li>
       </ul>
 
-      <!-- Right buttons (Login, Register, Username) -->
+      @if(userService.loggedUserId=='') {
       <ul class="navbar-nav ms-auto align-items-center flex-row flex-wrap gap-2 mt-3 mt-lg-0">
-
         <!-- Login Button -->
         <li class="nav-item">
           <button class="btn btn-outline-light" routerLink="/login">
@@ -37,7 +36,9 @@
             <i class="bi bi-person-plus-fill me-1"></i> Register
           </button>
         </li>
-
+      </ul>
+      } @else {
+      <ul class="navbar-nav ms-auto align-items-center flex-row flex-wrap gap-2 mt-3 mt-lg-0">
         <!-- Username Dropdown Button -->
         <li class="nav-item dropdown">
           <a class="btn btn-light fw-bold dropdown-toggle d-flex align-items-center" href="#" id="navbarDropdown"
@@ -57,6 +58,8 @@
           </ul>
         </li>
       </ul>
+      }
+
     </div>
   </div>
 </nav>

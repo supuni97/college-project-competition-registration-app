@@ -38,6 +38,7 @@ export class LoginComponent {
         localStorage.setItem('studentId', res.userId);
         // console.log('Server responded:', res);
         alert('User found');
+        window.location.reload();
       },
       error: (err: any) => {
         debugger;
