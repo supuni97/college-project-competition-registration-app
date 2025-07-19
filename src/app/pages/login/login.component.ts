@@ -34,10 +34,13 @@ export class LoginComponent {
 
     this.userService.onUserLogin(formValue).subscribe({
       next: (res: any) => {
-        console.log('Server responded:', res);
+        debugger;
+        localStorage.setItem('studentId', res.userId);
+        // console.log('Server responded:', res);
         alert('User found');
       },
       error: (err: any) => {
+        debugger;
         console.error('Error from server:', err);
         alert('Wrong credentials');
       },

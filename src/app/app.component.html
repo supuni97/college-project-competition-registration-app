@@ -21,18 +21,42 @@
         <li class="nav-item"><a class="nav-link text-white" routerLink="/about">About</a></li>
       </ul>
 
-      <!-- Right buttons -->
-      <div class="d-flex flex-column align-items-end">
-        <div>
-          <button class="btn btn-outline-light me-2" routerLink="/login">
+      <!-- Right buttons (Login, Register, Username) -->
+      <ul class="navbar-nav ms-auto align-items-center flex-row flex-wrap gap-2 mt-3 mt-lg-0">
+
+        <!-- Login Button -->
+        <li class="nav-item">
+          <button class="btn btn-outline-light" routerLink="/login">
             <i class="bi bi-box-arrow-in-right me-1"></i> Login
           </button>
+        </li>
+
+        <!-- Register Button -->
+        <li class="nav-item">
           <button class="btn btn-light fw-bold" routerLink="/register">
             <i class="bi bi-person-plus-fill me-1"></i> Register
           </button>
-        </div>
-        <hr class="text-white border-2 opacity-100 w-100 mt-2">
-      </div>
+        </li>
+
+        <!-- Username Dropdown Button -->
+        <li class="nav-item dropdown">
+          <a class="btn btn-light fw-bold dropdown-toggle d-flex align-items-center" href="#" id="navbarDropdown"
+            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-person-circle me-1"></i> UserName
+          </a>
+
+          <!-- Dropdown Menu -->
+          <ul class="dropdown-menu dropdown-menu-end mt-2 shadow-sm border-0" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#"><i class="bi bi-speedometer2 me-2"></i> Dashboard</a></li>
+            <li><a class="dropdown-item" href="#"><i class="bi bi-person-lines-fill me-2"></i> My Profile</a></li>
+            <li><a class="dropdown-item" href="#"><i class="bi bi-folder2-open me-2"></i> My Projects</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item text-danger" href="#"><i class="bi bi-box-arrow-right me-2"></i> Logout</a></li>
+          </ul>
+        </li>
+      </ul>
     </div>
   </div>
 </nav>
