@@ -34,6 +34,7 @@ export class CompetitionComponent implements OnInit {
     this.competitionSrv.createCompetition(this.newObj).subscribe({
       next: () => {
         alert('Competition created');
+        this.getAll();
       },
       error: () => {
         alert('API Error');
