@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Constant } from '../Constant/constant';
 
 @Injectable({
   providedIn: 'root',
@@ -16,9 +17,6 @@ export class UserService {
 
   onUserLogin(obj: any) {
     console.log('Sending login request to server with:', obj); // ✅
-    return this.http.post(
-      'https://api.freeprojectapi.com/api/ProjectCompetition/login',
-      obj
-    );
+    return this.http.post(Constant.API_URL + 'login', obj);
   }
 }

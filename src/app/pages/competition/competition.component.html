@@ -18,22 +18,22 @@
                 <th>Status</th>
                 <th>Start Date</th>
                 <th>End Date</th>
-                <th>Actions</th>
+
               </tr>
             </thead>
             <tbody id="competitionTableBody">
               <!-- Example row -->
+              @for(item of gridList; track $index){
               <tr>
-                <td>1</td>
-                <td>Physics Olympiad</td>
-                <td><span class="badge bg-warning text-dark">Upcoming</span></td>
-                <td>2025-07-18</td>
-                <td>2025-07-20</td>
-                <td>
-                  <button class="btn btn-sm btn-warning me-1">Edit</button>
-                  <button class="btn btn-sm btn-danger">Delete</button>
-                </td>
+                <td>{{$index+1}}</td>
+                <td>{{item.title}}</td>
+                <td>{{item.startDate | date:'dd-MM-yyyy'}}</td>
+                <td>{{item.endDate | date:'dd-MM-yyyy'}}</td>
+                <td>{{item.status}}</td>
+
               </tr>
+              }
+
             </tbody>
           </table>
         </div>
@@ -48,31 +48,32 @@
         </div>
         <div class="card-body">
           <form id="competitionForm">
-            <input type="hidden" class="form-control" id="competitionId">
 
             <div class="mb-3">
               <label for="title" class="form-label">Title</label>
-              <input type="text" class="form-control" id="title" required>
+              <input type="text" [(ngModel)]="newObj.title" name="title" class="form-control" id="title" required>
             </div>
 
             <div class="mb-3">
               <label for="description" class="form-label">Description</label>
-              <textarea class="form-control" id="description" rows="3" required></textarea>
+              <textarea class="form-control" [(ngModel)]="newObj.description" name="description" id="description"
+                rows="3" required></textarea>
             </div>
 
             <div class="mb-3">
               <label for="startDate" class="form-label">Start Date</label>
-              <input type="datetime-local" class="form-control" id="startDate" required>
+              <input type="date" class="form-control" [(ngModel)]="newObj.startDate" name="startDate" id="startDate"
+                required>
             </div>
 
             <div class="mb-3">
               <label for="endDate" class="form-label">End Date</label>
-              <input type="datetime-local" class="form-control" id="endDate" required>
+              <input type="date" class="form-control" [(ngModel)]="newObj.endDate" name="endDate" id="endDate" required>
             </div>
 
             <div class="mb-3">
               <label for="status" class="form-label">Status</label>
-              <select class="form-select" id="status" required>
+              <select class="form-select" id="status" [(ngModel)]="newObj.status" name="status" required>
                 <option value="">Select Status</option>
                 <option value="Upcoming">Upcoming</option>
                 <option value="Ongoing">Ongoing</option>
@@ -81,8 +82,8 @@
             </div>
 
             <div class="d-grid">
-              <button type="submit" class="btn btn-success">Save</button>
-              <button type="submit" class="btn btn-secondary">Clear</button>
+              <button type="button" (click)="onSave()" class="btn btn-success">Save</button>
+              <button type="button" class="btn btn-secondary">Clear</button>
 
             </div>
           </form>
