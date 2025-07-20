@@ -38,6 +38,7 @@ export class LoginComponent {
       next: (res: any) => {
         debugger;
         localStorage.setItem('studentId', res.userId);
+        localStorage.setItem('loggedUser', JSON.stringify(res));
         this.router.navigateByUrl('/home');
         this.userService.loggedUserId = res.userId;
         alert('User found');
