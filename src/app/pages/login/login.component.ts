@@ -2,6 +2,7 @@ import { Component, inject } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { UserService } from '../../sevices/user.service';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -16,6 +17,7 @@ export class LoginComponent {
   });
 
   userService = inject(UserService);
+  router = inject(Router);
 
   showPassword: boolean = false;
 
@@ -36,9 +38,9 @@ export class LoginComponent {
       next: (res: any) => {
         debugger;
         localStorage.setItem('studentId', res.userId);
-        // console.log('Server responded:', res);
+        this.router.navigateByUrl('/home');
+        this.userService.loggedUserId = res.userId;
         alert('User found');
-        window.location.reload();
       },
       error: (err: any) => {
         debugger;

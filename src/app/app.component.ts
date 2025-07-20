@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { RouterLink, RouterOutlet } from '@angular/router';
+import { Router, RouterLink, RouterOutlet } from '@angular/router';
 import { UserService } from './sevices/user.service';
 
 @Component({
@@ -12,4 +12,10 @@ export class AppComponent {
   title = 'college-project-competition-registration-app';
 
   userService = inject(UserService);
+  router = inject(Router);
+  onLogoff() {
+    localStorage.removeItem('studentId');
+    this.userService.loggedUserId = '';
+    this.router.navigateByUrl('/home');
+  }
 }
